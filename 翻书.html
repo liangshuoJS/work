@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<meta name="description" content="智能社是一家专注于web前端开发技术的公司，目前主要提供JavaScript培训和HTML5培训两项服务，同时还推出了大量javascript基础知识教程，智能课堂为你带来全新的学习方法和快乐的学习体验。" />
+<title>智能社— http://www.zhinengshe.com</title>
+<style>
+*{margin:0; padding:0;}
+.box{width:700px; height:400px; margin:100px auto; background:url(img/1.jpg) no-repeat; position:relative; top:0; left:0;}
+.page{width:350px; height:400px; position:absolute; left:50%; top:0; -webkit-transform-style:preserve-3d; -webkit-transform-origin:left center; -webkit-transition:1s all ease; -webkit-transform:perspective(800px) rotateY(0deg); z-index:3;}
+.page .front{width:100%; height:100%; position:absolute; top:0; left:0; background:url(img/1.jpg) no-repeat -350px 0; -webkit-transform:translateZ(1px);}
+.page .back{width:100%; height:100%; position:absolute; top:0; left:0; background:url(img/2.jpg) no-repeat; -webkit-transform:translateZ(-1px) scale(-1,1); }
+.shadow{width:350px; height:400px; background:#000; opacity:0.5; z-index:2; position:absolute; left:50%; top:0; -webkit-transition:1s all ease;}
+.bottom{position:absolute; top:0; right:0; width:350px; height:400px; background:url(img/2.jpg) no-repeat -350px 0; z-index:1;}
+.box:active .page{-webkit-transform:perspective(800px) rotateY(-180deg);}
+.box:active .shadow{opacity:0;}
+</style>
+<script>
+</script>
+</head>
+
+<body>
+<div class="box">
+	<div class="page">
+		<div class="front"></div>
+		<div class="back"></div>
+	</div>
+	<div class="shadow"></div>
+	<div class="bottom"></div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
